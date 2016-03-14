@@ -1,31 +1,35 @@
-# Week 1 Project: *Instagram Photo Viewer*
+# Week 1 Project - *Instagram Photo Viewer*
 
-**Overview:** Build a read-only photo viewer for Instagram which allows a user to check out popular photos.
+**Instagram Photo Viewer** is an android app that allows a user to check out popular photos from Instagram. The app utilizes Instagram API to display images and basic image information to the user.
 
-Submitted by: **Trần Thanh I Len**
-
-Time spent: **19** hours spent in total
+Time spent: **27** hours spent in total
 
 ## User Stories
 
-The following user stories **must** be completed:
+The following **required** functionality is completed:
 
-* [ ] User can scroll through current popular photos from Instagram (5 points)
+* [ ] User can **scroll through current popular photos** from Instagram
 * [ ] For each photo displayed, user can see the following details:
-  * [ ] Graphic, Caption, Username (2 points)
-  * [ ] Optional relative timestamp, like count, user profile image (3 points)
+  * [ ] Graphic, Caption, Username
+  * [ ] Relative timestamp, likes count, user's profile image
 
-The following advanced user stories are **optional** but recommended:
+The following **optional** features are implemented:
 
-* [ ] **Advanced:** Add pull-to-refresh for popular stream with SwipeRefreshLayout (**1 point**)
-* [ ] **Advanced:** Show latest comment for each photo (bonus: show last 2 comments) (**1 point + 1 bonus**)
-* [ ] **Advanced:** Display each user profile image using a RoundedImageView (**2 points**)
-* [ ] **Advanced:** Display a nice default placeholder graphic for each image during loading (read more about Picasso) (**1 point**)
-* [ ] **Advanced:** Improve the user interface through styling and coloring (**1 to 5 points** depending on the difficulty of UI improvements)
-* [ ] **Bonus:** Allow user to view all comments for an image within a separate activity or dialog fragment (**3 points**)
-* [ ] **Bonus:** Allow video posts to be played in full-screen using the VideoView (**2 points**)
-* [ ] **Bonus:** Apply the popular Butterknife annotation library to reduce view boilerplate. (1 point)
+* [ ] User can **pull-to-refresh** popular stream to get the latest popular photos
+* [ ] User can see latest comments for each photo (**bonus** - Show last 2 comments for each photo)
+* [ ] User can see all the profile images in circles (Hint, use [RoundedImageView](https://github.com/vinc3m1/RoundedImageView))
+* [ ] Display a nice default placeholder graphic for each image during loading
+* [ ] Improved the user interface through styling and coloring
 
+The following **bonus** features are implemented:
+
+* [ ] Allow user to view all comments for an image within a separate activity or dialog fragment
+* [ ] Allow video posts to be played in full-screen using the VideoView
+* [ ] Apply the popular [Butterknife annotation library](http://guides.codepath.com/android/Reducing-View-Boilerplate-with-Butterknife) to reduce boilerplate code.
+
+The following **additional** features are implemented:
+
+* [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough 
 
@@ -39,9 +43,14 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+## Open-source libraries used
+
+- [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
+- [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+
 ## License
 
-    Copyright [February 2016] [Trần Thanh I Len]
+    Copyright [2016] [ILenTT]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
