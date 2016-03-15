@@ -15,17 +15,17 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] User can **pull-to-refresh** popular stream to get the latest popular photos
-* [ ] User can see latest comments for each photo (**bonus** - Show last 2 comments for each photo)
-* [ ] User can see all the profile images in circles (Hint, use [RoundedImageView](https://github.com/vinc3m1/RoundedImageView))
-* [ ] Display a nice default placeholder graphic for each image during loading
-* [ ] Improved the user interface through styling and coloring
+* [x] User can **pull-to-refresh** popular stream to get the latest popular photos
+* [x] User can see latest comments for each photo (**bonus** - Show last 2 comments for each photo)
+* [x] User can see all the profile images in circles (Hint, use [RoundedImageView](https://github.com/vinc3m1/RoundedImageView))
+* [x] Display a nice default placeholder graphic for each image during loading
+* [x] Improved the user interface through styling and coloring
 
 The following **bonus** features are implemented:
 
-* [ ] Allow user to view all comments for an image within a separate activity or dialog fragment
-* [ ] Allow video posts to be played in full-screen using the VideoView
-* [ ] Apply the popular [Butterknife annotation library](http://guides.codepath.com/android/Reducing-View-Boilerplate-with-Butterknife) to reduce boilerplate code.
+* [x] Allow user to view all comments for an image within a separate activity or dialog fragment
+* [x] Allow video posts to be played in full-screen using the VideoView
+* [x] Apply the popular [Butterknife annotation library](http://guides.codepath.com/android/Reducing-View-Boilerplate-with-Butterknife) to reduce boilerplate code.
 
 The following **additional** features are implemented:
 
@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.github.com/ilentt/InstagramPhotoViewer/master/app/src/main/res/drawable/screenshot.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
