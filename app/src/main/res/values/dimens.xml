@@ -11,6 +11,6 @@
     <dimen name="item_text_size_comment">12sp</dimen>
     <dimen name="min_height_image">50dp</dimen>
     <dimen name="min_height_comment">64dp</dimen>
-    <dimen name="corner_radius">24dp</dimen>
+    <dimen name="corner_radius">50dp</dimen>
     <dimen name="min_height_line">1dp</dimen>
 </resources>

@@ -28,7 +28,7 @@ public class PhotoModel implements Serializable {
             this.id = jsonObject.getString("id");
             this.username = jsonObject.getJSONObject("user").getString("username");
             this.avatar = jsonObject.getJSONObject("user").getString("profile_picture");
-            this.caption = this.username;
+            this.caption = "<b><font color='#3F729B'> " + this.username + "</font></b> ";
 
             // show caption if available
             if(!jsonObject.isNull("caption")) {
@@ -48,7 +48,7 @@ public class PhotoModel implements Serializable {
             commentModels = new ArrayList<>();
             commentModels.addAll(CommentModel.fromJSONArray(commentJson));
 
-            this.time = jsonObject.getLong("create_time");
+            this.time = jsonObject.getLong("created_time");
             String type = jsonObject.getString("type");
             if(type.equals("video")) {
                 this.videoUrl = jsonObject.getJSONObject("videos").getJSONObject("standard_resolution").getString("url");

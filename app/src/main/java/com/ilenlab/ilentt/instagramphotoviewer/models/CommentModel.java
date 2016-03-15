@@ -19,10 +19,11 @@ public class CommentModel implements Serializable {
 
     public CommentModel(JSONObject jsonObject) {
         try {
-            this.username = jsonObject.getJSONObject("from").getString("username");
+            // markup name account
+            this.username = "<b><font color='#3F729B'>" + jsonObject.getJSONObject("from").getString("username") + "</font></b> ";
             this.avatar = jsonObject.getJSONObject("from").getString("profile_picture");
             this.comment = this.username + jsonObject.getString("text");
-            this.time = jsonObject.getLong("created_date");
+            this.time = jsonObject.getLong("created_time");
         }catch(JSONException e) {
             e.printStackTrace();
         }
