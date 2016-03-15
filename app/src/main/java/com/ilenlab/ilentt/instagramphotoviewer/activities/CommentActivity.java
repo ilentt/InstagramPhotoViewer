@@ -31,7 +31,7 @@ import cz.msebera.android.httpclient.Header;
  */
 public class CommentActivity extends AppCompatActivity  {
 
-    public static final String CLIENT_ID = "f5648e5d9fc84485828eb75a5582361a";
+    public static final String CLIENT_ID = "4f491690c6444624876af2f639876a8a";
     private ArrayList<CommentModel> commentModels;
     private CommentAdapter commentAdapter;
 
