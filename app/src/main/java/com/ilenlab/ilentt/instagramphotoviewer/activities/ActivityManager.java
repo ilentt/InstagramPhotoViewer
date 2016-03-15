@@ -1,5 +1,7 @@
 package com.ilenlab.ilentt.instagramphotoviewer.activities;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +25,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class ActivityManager extends AppCompatActivity {
 
-    public static final String CLIENT_ID = "4f491690c6444624876af2f639876a8a";
+    public static final String CLIENT_ID = "e05c462ebd86446ea48a5af73769b602";
     private ArrayList<PhotoModel> photoModels;
     private PhotoAdapter photoAdapter;
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -36,6 +38,9 @@ public class ActivityManager extends AppCompatActivity {
         // add icon to actionBar
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        // change color actionBar
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#3F729B"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
         photoModels = new ArrayList<>();
         photoAdapter = new PhotoAdapter(this, photoModels);

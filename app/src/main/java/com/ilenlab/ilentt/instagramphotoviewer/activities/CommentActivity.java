@@ -1,7 +1,12 @@
 package com.ilenlab.ilentt.instagramphotoviewer.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.format.DateUtils;
@@ -31,15 +36,23 @@ import cz.msebera.android.httpclient.Header;
  */
 public class CommentActivity extends AppCompatActivity  {
 
-    public static final String CLIENT_ID = "4f491690c6444624876af2f639876a8a";
+    public static final String CLIENT_ID = "e05c462ebd86446ea48a5af73769b602";
     private ArrayList<CommentModel> commentModels;
     private CommentAdapter commentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_comment);
+
+        // change color actionBar
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#3F729B"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
+
+        // change backArrow color
+        final Drawable backArrow = getResources().getDrawable(R.drawable.back_48);
+        backArrow.setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
+        getSupportActionBar().setHomeAsUpIndicator(backArrow);
 
         Intent i = getIntent();
         String photoId = i.getStringExtra("photoId");
@@ -114,5 +127,18 @@ public class CommentActivity extends AppCompatActivity  {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private Drawable getColoredArrow() {
+        Drawable arrowDrawable = getResources().getDrawable(R.drawable.back_48);
+        Drawable wrapped = DrawableCompat.wrap(arrowDrawable);
+
+        if (arrowDrawable != null && wrapped != null) {
+            // This should avoid tinting all the arrows
+            arrowDrawable.mutate();
+            DrawableCompat.setTint(wrapped, Color.WHITE);
+        }
+
+        return wrapped;
     }
 }
